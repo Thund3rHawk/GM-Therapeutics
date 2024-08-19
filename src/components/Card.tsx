@@ -1,23 +1,44 @@
-import React from 'react'
-import { StyleSheet, Text, TouchableOpacity,Image } from 'react-native'
+import {useNavigation} from '@react-navigation/native';
+import React from 'react';
+import {StyleSheet, Text, TouchableOpacity, Image, View} from 'react-native';
 
-const Card = ({bgColor,imageUrl,heading,about,textColor,text}: any) => {
-    return (
-        <TouchableOpacity style={[ { width:"90%",backgroundColor:`${bgColor}`,padding:20, flexDirection:"row",borderRadius:10, }]}>
-            <Image source={imageUrl} style={{height:130,width:110,borderRadius:10,marginRight:20}}/>
-            <Text style={{color:`${textColor}`,alignSelf:"center",alignItems:"center"}}>{heading}{about}{text}</Text>
-        </TouchableOpacity>
-        
+const Card = ({
+  bgColor,
+  imageUrl,
+  heading,
+  about,
+  textColor,
+  text,
+  navigationScreen,
+}: any) => {
+  const navigation = useNavigation();
 
-    )
-}
-const styles = StyleSheet.create({
+  return (
+    <TouchableOpacity
+      style={[
+        {
+          width: '90%',
+          backgroundColor: `${bgColor}`,
+          padding: 15,
+          flexDirection: 'row',
+          borderRadius: 20,
+        },
+      ]}
+      onPress={() => {
+        navigation.navigate(`${navigationScreen}`);
+      }}>
+      <Image
+        source={imageUrl}
+        style={{height: 120, width: 110, borderRadius: 10, marginRight: 20}}
+      />
+      <View style={{flexDirection: 'column', justifyContent: 'center'}}>
+        <Text style={{color: `${textColor}`, fontWeight: 'bold'}}>
+          {heading}
+        </Text>
+        <Text style={{color: `${textColor}`, fontWeight: '400'}}>{about}</Text>
+      </View>
+    </TouchableOpacity>
+  );
+};
 
-    text: {
-        
-        fontSize: 18,
-        fontWeight: 'bold',
-    },
-},
-);
-export default Card
+export default Card;

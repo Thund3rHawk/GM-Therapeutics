@@ -1,34 +1,26 @@
-import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, } from 'react-native'
+import React from 'react';
+import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 
-
-const Button = ({ buttonName }: any) => {
-
-  return (
-    <TouchableOpacity style={[styles.button, { width: '100%' }]}>
-      <Text style={styles.buttonText}>{buttonName}</Text>
-    </TouchableOpacity>
-
-  )
+interface props {
+  buttonName: string,
+  onPress: ()=>void
 }
 
-const styles = StyleSheet.create({
+const Button: React.FC<props> = ({buttonName, onPress}) => {
+  return (
+    <TouchableOpacity style={[styles.button]} onPress={onPress}>
+      <Text style={styles.buttonText}>{buttonName}</Text>
+    </TouchableOpacity>
+  );
+};
 
-  text: {
-   color: 'Red',
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
+const styles = StyleSheet.create({
   button: {
     backgroundColor: '#354169',
-    paddingVertical: 10,
-    borderRadius: 280,
-    alignItems: 'center',
+    borderRadius: 30,
     justifyContent: 'center',
-
-    //marginHorizontal: 20,
     height: 70,
-
+    width: '100%'
   },
   buttonText: {
     textAlign: 'center',
@@ -38,5 +30,4 @@ const styles = StyleSheet.create({
   },
 });
 
-
-export default Button
+export default Button;
