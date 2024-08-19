@@ -3,14 +3,10 @@ import {
   StyleSheet,
   Text,
   View,
-  Image,
   TouchableOpacity,
   Dimensions,
-  ImageBackground,
 } from 'react-native';
 import Card from '../components/Card';
-// import NavigationBar from '../components/NavigationBar';
-import ham_image from '../assets/ham_image.png';
 import image_13 from '../assets/image_13.png';
 import image_2 from '../assets/image_2.png';
 import BackButton from '../components/BackButton';
@@ -39,13 +35,7 @@ const Skincare = () => {
           paddingHorizontal: 20,
           justifyContent: 'space-between',
         }}>
-        <Text style={styles.welcomeText}>SKIN CARE</Text>
-        {/* <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-          <Text style={styles.headingText}> Lorem Ipsum</Text>
-          <TouchableOpacity>
-            <Text style={[styles.text, {}]}> View All &gt;</Text>
-          </TouchableOpacity>
-        </View> */}
+        <Text style={styles.welcomeText}>SKIN CARE</Text>       
       </View>
 
       <View style={[styles.cardsSection, {width}]}>
@@ -68,7 +58,6 @@ const Skincare = () => {
           navigationScreen = 'OrthoPdfPage'
         />
       </View>
-      {/* <NavigationBar /> */}
     </View>
   );
 };

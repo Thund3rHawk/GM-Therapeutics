@@ -9,11 +9,7 @@ import {
 } from 'react-native';
 import BackButton from '../components/BackButton';
 import ImageView from '../components/ImageView';
-// import NavigationBar from '../components/NavigationBar';
 import skin_card from '../assets/skin_card.jpg';
-import image_y from '../assets/image_y.png';
-import image_z from '../assets/image_z.png';
-// import ham_image from '../assets/ham_image.png';
 
 const Imagepage = () => {
   const {width, height} = Dimensions.get('window');
@@ -48,10 +44,8 @@ const Imagepage = () => {
           borderRadius: 100,
         }}>
             <ImageView image={skin_card} heading='Lorem Ipsum' btnName='View All' about = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. "/>
-            {/* <ImageView image={image_y} heading='Lorem Ipsum' btnName='View All' about = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. "/> */}
-            {/* <ImageView image={image_z} heading='Lorem Ipsum' btnName='View All' about = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. "/> */}
+            
         </View>
-        {/* <NavigationBar/> */}
     </View>
   );
 };

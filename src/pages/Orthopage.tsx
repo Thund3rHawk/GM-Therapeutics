@@ -8,17 +8,13 @@ import {
   Dimensions,
 } from 'react-native';
 import Card from '../components/Card';
-// import NavigationBar from '../components/NavigationBar';
-// import ham_image from '../assets/ham_image.png';
 import image_1 from '../assets/image_1.png';
 import image_2 from '../assets/image_2.png';
-import { useNavigation } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
-// import BackButton from '../components/BackButton';
 
 const Orthopage = () => {
   const {width, height} = Dimensions.get('window');
-  // const navigation = useNavigation();
+  
   return (
     <View style={[styles.conainer, {height, width}]}>
       <View

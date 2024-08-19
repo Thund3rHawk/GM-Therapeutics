@@ -1,19 +1,16 @@
 import ortho_image from '../assets/gp_image.jpg';
 import gyno_image from '../assets/gyno_image.png';
 import Skincare_image from '../assets/Skincare_image.png';
-import ham_image from '../assets/ham_image.png';
 import React from 'react';
 import {
   StyleSheet,
   Text,
   View,
-  Image,
   TouchableOpacity,
   Dimensions,
 } from 'react-native';
 import ImageButton from '../components/ImageButton';
 import {useNavigation} from '@react-navigation/native';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const Homepage = () => {
   const {width, height} = Dimensions.get('window');

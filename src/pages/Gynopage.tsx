@@ -1,8 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity, Dimensions, ImageBackground, } from 'react-native'
 import Card from '../components/Card'
-// import NavigationBar from '../components/NavigationBar'
-import ham_image from '../assets/ham_image.png'
 import image_gyno from '../assets/image_gyno.png'
 import image_2 from '../assets/image_2.png'
 import BackButton from '../components/BackButton'
