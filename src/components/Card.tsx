@@ -1,16 +1,24 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity, Image, View} from 'react-native';
+import { Text, TouchableOpacity, Image, View, ImageSourcePropType} from 'react-native';
 
-const Card = ({
+interface props{
+  bgColor: string,
+  imageUrl: ImageSourcePropType,
+  heading: string,
+  about: string,
+  textColor: string,
+  navigationScreen: string
+}
+
+const Card: React.FC<props> = ({
   bgColor,
   imageUrl,
   heading,
   about,
   textColor,
-  text,
   navigationScreen,
-}: any) => {
+}) => {
   const navigation = useNavigation();
 
   return (

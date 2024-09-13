@@ -40,22 +40,20 @@ const Skincare = () => {
 
       <View style={[styles.cardsSection, {width}]}>
         <Card
-          bgColor="#354169"
-          imageUrl={image_13}
-          heading="IMAGE"
-          about="Lorem ipsum dolor sit amet,"
-          textColor="#FFFFFF"
-          text="Lorem ipsum dolor sit amet,"
-          navigationScreen="ImagePage"
-        />
-        <Card
           bgColor="#C8A64E"
           imageUrl={image_2}
           heading="PDF"
           about="Lorem ipsum dolor sit amet,"
           textColor="#000000"
-          text="Lorem ipsum dolor sit amet,"
           navigationScreen = 'OrthoPdfPage'
+        />
+        <Card
+          bgColor="#354169"
+          imageUrl={image_13}
+          heading="IMAGE"
+          about="Reminder Cart"
+          textColor="#FFFFFF"
+          navigationScreen="ImagePage"
         />
       </View>
     </View>
