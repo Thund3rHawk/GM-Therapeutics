@@ -1,6 +1,6 @@
 import ortho_image from '../assets/gp_image.jpg';
 import gyno_image from '../assets/gyno_image.png';
-import Skincare_image from '../assets/Skincare_image.png';
+import Skincare_image from '../assets/Skincare_image.jpg';
 import React from 'react';
 import {
   StyleSheet,
@@ -84,6 +84,13 @@ const Homepage = () => {
           padding:20,
           width:'90%'
         }}>
+          <ImageButton
+            image={Skincare_image}
+            text="SKIN CARE"
+            onPress={() => {
+              navigation.navigate('SkinCare');
+            }}
+          />
         <ImageButton
           image={ortho_image}
           text="GP and ORTHO"
@@ -96,13 +103,6 @@ const Homepage = () => {
           text="GYNECOLOGY"
           onPress={() => {
             navigation.navigate('GynoPage');
-          }}
-        />
-        <ImageButton
-          image={Skincare_image}
-          text="SKIN CARE"
-          onPress={() => {
-            navigation.navigate('SkinCare');
           }}
         />
       </View>
