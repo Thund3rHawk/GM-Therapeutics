@@ -45,7 +45,7 @@ const Skincare = () => {
           heading="PDF"
           about="Lorem ipsum dolor sit amet,"
           textColor="#000000"
-          navigationScreen = 'OrthoPdfPage'
+          navigationScreen = 'SkinCarePdfPage'
         />
         <Card
           bgColor="#354169"

@@ -20,6 +20,7 @@ import OrhtoPdfpage from './src/pages/OrthoPdfpage';
 import GynoPdfpage from './src/pages/GynoPdfPage';
 import Orthoimage from './src/pages/Orthoimage';
 import Gynoimage from './src/pages/Gynoimage';
+import SkinCarePdfpage from './src/pages/SkinCarePdfPage';
 const Stack = createStackNavigator();
 
 function App(): React.JSX.Element {
@@ -32,6 +33,7 @@ function App(): React.JSX.Element {
         <Stack.Screen name="HomePage" component={Homepage} />
         <Stack.Screen name="OrthoPage" component={Orthopage} />
         <Stack.Screen name="SkinCare" component={Skincare} />
+        <Stack.Screen name="SkinCarePdfPage" component={SkinCarePdfpage} />
         <Stack.Screen name="GynoPage" component={Gynopage} />
         <Stack.Screen name="ImagePage" component={Imagepage} />
         <Stack.Screen name="Gynoimage" component={Gynoimage} />

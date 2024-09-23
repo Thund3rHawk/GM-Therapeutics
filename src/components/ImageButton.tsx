@@ -25,7 +25,6 @@ const ImageButton: React.FC<props> = ({image, text, onPress}) => {
               width: '100%',
               height: 180,
               marginRight: 10,
-
               // padding:20,
               flexDirection: 'row',
               justifyContent: 'space-between',
