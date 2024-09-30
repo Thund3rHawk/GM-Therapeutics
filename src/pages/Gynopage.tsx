@@ -1,8 +1,7 @@
 import React from 'react'
-import { StyleSheet, Text, View, Image, TouchableOpacity, Dimensions, ImageBackground, } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from 'react-native'
 import Card from '../components/Card'
 import image_gyno from '../assets/image_gyno.png'
-// import image_2 from '../assets/image_2.png'
 import gyno_image from '../assets/gyno_image.png';
 import BackButton from '../components/BackButton'
 
@@ -23,7 +22,7 @@ const Gynopage = () => {
             {/* <Image source={ham_image} style={{width: 30, height: 30}} /> */}
           </TouchableOpacity>
         </View>
-        <View style = {{height: '15%', width, paddingHorizontal: 20, justifyContent: 'space-between'}}>
+        <View style = {{height: '20%', width, paddingHorizontal: 20, justifyContent: 'space-between'}}>
           <Text style={styles.welcomeText}>Gynecology & Obstetrics</Text>
           {/* <View style = {{flexDirection: 'row', justifyContent: 'space-between'}}>
               <Text style={styles.headingText}> Lorem Ipsum</Text>
@@ -51,7 +50,6 @@ const Gynopage = () => {
             navigationScreen = 'Gynoimage'
           />
         </View>
-        {/* <NavigationBar /> */}
       </View>
     );
 }

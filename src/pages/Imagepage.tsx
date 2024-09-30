@@ -30,7 +30,7 @@ const Imagepage = () => {
           padding: 15,
         }}>
         <BackButton/>
-        <Text style={[styles.text, {fontSize: 20}]}>IMAGE</Text>
+        <Text style={[styles.text, {fontSize: 20}]}>reminder card</Text>
         <TouchableOpacity style={{}}>
           {/* <Image source={ham_image} style={{width: 30, height: 30, right: 0}} /> */}
         </TouchableOpacity>
@@ -43,7 +43,7 @@ const Imagepage = () => {
           height: '70%',
           borderRadius: 100,
         }}>
-            <ImageView image={skin_card} heading='Lorem Ipsum' btnName='View All' about = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. "/>
+            <ImageView image={skin_card} heading='Skin Care' about = "Revitalize your skin with our nourishing skincare line, featuring natural ingredients to hydrate, protect, and rejuvenate. Achieve a glowing, smooth complexion with products designed to enhance your skin's health and radiance."/>
             
         </View>
     </View>
@@ -61,6 +61,7 @@ const styles = StyleSheet.create({
       color: '#354169',
       fontWeight: 'bold',
       fontSize: 10,
+      textTransform: 'uppercase'
     },
     button: {
       paddingVertical: 10,

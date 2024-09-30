@@ -82,6 +82,7 @@ const Homepage = () => {
           height: '90%',
           borderRadius: 90,
           padding:20,
+          justifyContent: 'space-between',
           width:'90%'
         }}>
           <ImageButton

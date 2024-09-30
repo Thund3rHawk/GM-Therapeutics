@@ -3,13 +3,12 @@ import {
   StyleSheet,
   Text,
   View,
-  Image,
   TouchableOpacity,
   Dimensions,
 } from 'react-native';
 import Card from '../components/Card';
 import image_1 from '../assets/image_1.png';
-import image_2 from '../assets/image_2.png';
+import image_2 from '../assets/image_2.jpg';
 import BackButton from '../components/BackButton';
 
 const Orthopage = () => {
@@ -30,7 +29,7 @@ const Orthopage = () => {
           {/* <Image source={ham_image} style={{width: 30, height: 30}} /> */}
         </TouchableOpacity>
       </View>
-      <View style = {{height: '15%', width, paddingHorizontal: 20, justifyContent: 'space-between'}}>
+      <View style = {{height: '20%', width, paddingHorizontal: 20, justifyContent: 'space-between'}}>
         <Text style={styles.welcomeText}>General Physician & Orthopedic </Text>
         {/* <View style = {{flexDirection: 'row', justifyContent: 'space-between'}}>
             <Text style={styles.headingText}> Lorem Ipsum</Text>
@@ -44,7 +43,7 @@ const Orthopage = () => {
         <Card
           bgColor="#C8A64E"
           imageUrl={image_2}
-          heading="gp and ortho folder"
+          heading={`General Physician & \nOrthopedic folder`}
           // about="Lorem ipsum dolor sit amet,"
           textColor="#000000"
           navigationScreen = 'OrthoPdfPage'

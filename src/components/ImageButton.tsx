@@ -18,7 +18,7 @@ const ImageButton: React.FC<props> = ({image, text, onPress}) => {
   return (
     <TouchableOpacity
       onPress={onPress}
-      style={{marginHorizontal: 0, marginBottom: 25, borderColor: 'black', borderWidth: 1,}}>
+      style={{marginHorizontal: 0, marginBottom: 25, borderColor: 'black', borderWidth: 1, borderRadius: 20}}>
           <Image
             source={image}
             style={{
@@ -31,6 +31,8 @@ const ImageButton: React.FC<props> = ({image, text, onPress}) => {
               // marginTop: 10,
               // borderRadius: 20,
               objectFit: 'cover',
+              borderTopLeftRadius: 20,
+              borderTopRightRadius: 20
             }}
           />
           <Text style={styles.headingText}>{text}</Text>

@@ -33,7 +33,7 @@ const Signup = () => {
           marginHorizontal: 20,
         }}>
         <Text style={styles.buttonText}>Register Now</Text>
-        <Text style={styles.welcomeText}>Welcome!!</Text>
+        <Text style={styles.welcomeText}>Welcome !!</Text>
 
         <View
           style={[styles.button, {borderRadius: 27, paddingHorizontal: 20}]}>
