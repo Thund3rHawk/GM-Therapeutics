@@ -7,8 +7,9 @@ import {
   Dimensions,
 } from 'react-native';
 import Card from '../components/Card';
+import Skincare_image from '../assets/Skincare.webp';
 import image_13 from '../assets/image_13.png';
-import image_2 from '../assets/image_2.png';
+// import image_2 from '../assets/image_2.png';
 import BackButton from '../components/BackButton';
 
 const Skincare = () => {
@@ -41,17 +42,17 @@ const Skincare = () => {
       <View style={[styles.cardsSection, {width}]}>
         <Card
           bgColor="#C8A64E"
-          imageUrl={image_2}
-          heading="PDF"
-          about="Lorem ipsum dolor sit amet,"
+          imageUrl={Skincare_image}
+          heading="SKIN CARE FOLDER"
+          // about="Lorem ipsum dolor sit amet,"
           textColor="#000000"
           navigationScreen = 'SkinCarePdfPage'
         />
         <Card
           bgColor="#354169"
           imageUrl={image_13}
-          heading="IMAGE"
-          about="Reminder Cart"
+          heading="REMINDER CARD"
+          // about="Reminder Cart"
           textColor="#FFFFFF"
           navigationScreen="ImagePage"
         />

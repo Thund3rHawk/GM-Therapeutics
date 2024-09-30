@@ -40,6 +40,7 @@ const ImageButton: React.FC<props> = ({image, text, onPress}) => {
 
 const styles = StyleSheet.create({
   headingText: {
+    textTransform: 'uppercase',
     fontWeight: 'bold',
     color: 'black',
     textAlign: 'center',
