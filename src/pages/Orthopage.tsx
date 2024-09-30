@@ -3,13 +3,12 @@ import {
   StyleSheet,
   Text,
   View,
-  Image,
   TouchableOpacity,
   Dimensions,
 } from 'react-native';
 import Card from '../components/Card';
 import image_1 from '../assets/image_1.png';
-import image_2 from '../assets/image_2.png';
+import image_2 from '../assets/image_2.jpg';
 import BackButton from '../components/BackButton';
 
 const Orthopage = () => {
@@ -30,8 +29,8 @@ const Orthopage = () => {
           {/* <Image source={ham_image} style={{width: 30, height: 30}} /> */}
         </TouchableOpacity>
       </View>
-      <View style = {{height: '15%', width, paddingHorizontal: 20, justifyContent: 'space-between'}}>
-        <Text style={styles.welcomeText}>GP and ORTHO</Text>
+      <View style = {{height: '20%', width, paddingHorizontal: 20, justifyContent: 'space-between'}}>
+        <Text style={styles.welcomeText}>General Physician & Orthopedic </Text>
         {/* <View style = {{flexDirection: 'row', justifyContent: 'space-between'}}>
             <Text style={styles.headingText}> Lorem Ipsum</Text>
             <TouchableOpacity>
@@ -44,16 +43,16 @@ const Orthopage = () => {
         <Card
           bgColor="#C8A64E"
           imageUrl={image_2}
-          heading="PDF"
-          about="Lorem ipsum dolor sit amet,"
+          heading={`General Physician & \nOrthopedic folder`}
+          // about="Lorem ipsum dolor sit amet,"
           textColor="#000000"
           navigationScreen = 'OrthoPdfPage'
         />
         <Card
           bgColor="#354169"
           imageUrl={image_1}
-          heading="IMAGE"
-          about="Reminder Cart"
+          heading="REMINDER CARD"
+          // about="Reminder Cart"
           textColor="#FFFFFF"
           navigationScreen = 'Orthoimage'
         />
@@ -89,6 +88,7 @@ const styles = StyleSheet.create({
     fontSize: 10,
   },
   welcomeText: {
+    textTransform: 'uppercase',
     fontWeight: 'bold',
     color: '#354169',
     fontSize: 35,

@@ -11,7 +11,7 @@ import {
 interface props {
   heading: string;
   image: ImageSourcePropType;
-  btnName: string;
+  btnName?: string;
   about: string;
 }
 
@@ -19,9 +19,9 @@ const ImageView: React.FC<props> = ({heading, image, btnName, about}) => {
   return (
     <View style={{marginHorizontal: 10, marginTop: 6}}>
       <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-        <Text style={styles.headingText}> {heading}</Text>
+        <Text style={styles.headingText}>{heading}</Text>
         <TouchableOpacity>
-          <Text style={[styles.text, {}]}> {btnName} &gt;</Text>
+          <Text style={[styles.text, {}]}>{btnName}</Text>
         </TouchableOpacity>
       </View>
       <Text style={styles.aboutText}>{about}</Text>

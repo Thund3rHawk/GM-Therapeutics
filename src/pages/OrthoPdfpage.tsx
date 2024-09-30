@@ -31,7 +31,7 @@ const OrhtoPdfpage = () => {
           padding: 15,
         }}>
         <BackButton />
-        <Text style={[styles.text, {}]}>PDF</Text>
+        {/* <Text style={[styles.text, {}]}>PDF</Text> */}
         <TouchableOpacity style={{}}>
           {/* <Image source={ham_image} style={{ width: 30, height: 30, }} /> */}
         </TouchableOpacity>
@@ -65,7 +65,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     borderRightWidth: 7,
     borderBottomWidth: 1,
-
     borderColor: 'black',
   },
   text: {

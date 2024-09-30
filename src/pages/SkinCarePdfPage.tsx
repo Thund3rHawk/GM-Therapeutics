@@ -31,7 +31,7 @@ const SkinCarePdfpage = () => {
           padding: 15,
         }}>
         <BackButton />
-        <Text style={[styles.text, {}]}>PDF</Text>
+        {/* <Text style={[styles.text, {}]}>PDF</Text> */}
         <TouchableOpacity style={{}}>
           {/* <Image source={ham_image} style={{ width: 30, height: 30, }} /> */}
         </TouchableOpacity>

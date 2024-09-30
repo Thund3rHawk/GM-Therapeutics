@@ -21,6 +21,7 @@ import GynoPdfpage from './src/pages/GynoPdfPage';
 import Orthoimage from './src/pages/Orthoimage';
 import Gynoimage from './src/pages/Gynoimage';
 import SkinCarePdfpage from './src/pages/SkinCarePdfPage';
+import ForgotPassword from './src/pages/ForgotPassword';
 const Stack = createStackNavigator();
 
 function App(): React.JSX.Element {
@@ -29,6 +30,7 @@ function App(): React.JSX.Element {
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Home" component={Getstarted} />
         <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
         <Stack.Screen name="SignUp" component={Signup} />
         <Stack.Screen name="HomePage" component={Homepage} />
         <Stack.Screen name="OrthoPage" component={Orthopage} />

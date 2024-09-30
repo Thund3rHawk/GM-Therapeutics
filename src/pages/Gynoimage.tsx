@@ -11,7 +11,6 @@ import BackButton from '../components/BackButton';
 import ImageView from '../components/ImageView';
 import omego_card from '../assets/omego_card.jpg';
 
-
 const Gynoimage = () => {
   const {width, height} = Dimensions.get('window');
   return (
@@ -30,8 +29,8 @@ const Gynoimage = () => {
           justifyContent: 'space-between',
           padding: 15,
         }}>
-        <BackButton/>
-        <Text style={[styles.text, {fontSize: 20}]}>IMAGE</Text>
+        <BackButton />
+        <Text style={[styles.text, {fontSize: 20}]}>reminder card</Text>
         <TouchableOpacity style={{}}>
           {/* <Image source={ham_image} style={{width: 30, height: 30, right: 0}} /> */}
         </TouchableOpacity>
@@ -44,47 +43,51 @@ const Gynoimage = () => {
           height: '70%',
           borderRadius: 100,
         }}>
-            <ImageView image={omego_card} heading='Lorem Ipsum' btnName='View All' about = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. "/>
-            {/* <ImageView image={image_y} heading='Lorem Ipsum' btnName='View All' about = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. "/> */}
-            {/* <ImageView image={image_z} heading='Lorem Ipsum' btnName='View All' about = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. "/> */}
-        </View>
+        <ImageView
+          image={omego_card}
+          heading="Gynecology & Obstetrics"
+          // btnName="View All"
+          about="Our clinic specializes in gynecology and obstetrics, offering expert care for women's health. From routine check-ups to prenatal and postnatal care, we ensure compassionate, personalized support throughout every stage of life and pregnancy."
+        />
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-    headingText: {
-      fontWeight: '500',
-      color: 'black',
-      textAlign: 'center',
-    },
-    text: {
-      textAlign: 'right',
-      color: '#354169',
-      fontWeight: 'bold',
-      fontSize: 10,
-    },
-    button: {
-      paddingVertical: 10,
-      borderRadius: 280,
-      alignItems: 'center',
-      justifyContent: 'center',
-      position: 'absolute',
-      top: 560,
-      bottom: 90,
-      marginTop: 200,
-      height: 50,
-      left: '10%',
-    },
-    buttonText: {
-      color: 'Red',
-      fontSize: 18,
-      fontWeight: 'bold',
-    },
-    welcomeText: {
-      fontWeight: 'bold',
-      color: '#354169',
-    },
-  });
+  headingText: {
+    fontWeight: '500',
+    color: 'black',
+    textAlign: 'center',
+  },
+  text: {
+    textAlign: 'right',
+    color: '#354169',
+    fontWeight: 'bold',
+    fontSize: 10,
+    textTransform: 'uppercase',
+  },
+  button: {
+    paddingVertical: 10,
+    borderRadius: 280,
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'absolute',
+    top: 560,
+    bottom: 90,
+    marginTop: 200,
+    height: 50,
+    left: '10%',
+  },
+  buttonText: {
+    color: 'Red',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  welcomeText: {
+    fontWeight: 'bold',
+    color: '#354169',
+  },
+});
 
 export default Gynoimage;

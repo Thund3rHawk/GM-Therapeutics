@@ -6,7 +6,7 @@ interface props{
   bgColor: string,
   imageUrl: ImageSourcePropType,
   heading: string,
-  about: string,
+  about?: string,
   textColor: string,
   navigationScreen: string
 }
@@ -40,7 +40,7 @@ const Card: React.FC<props> = ({
         style={{height: 120, width: 110, borderRadius: 10, marginRight: 20}}
       />
       <View style={{flexDirection: 'column', justifyContent: 'center'}}>
-        <Text style={{color: `${textColor}`, fontWeight: 'bold'}}>
+        <Text style={{color: `${textColor}`, fontWeight: 'bold', textTransform: 'uppercase'}}>
           {heading}
         </Text>
         <Text style={{color: `${textColor}`, fontWeight: '400'}}>{about}</Text>

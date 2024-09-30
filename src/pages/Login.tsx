@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   StyleSheet,
   Text,
@@ -20,6 +20,8 @@ import BackButton from '../components/BackButton';
 
 const Login = () => {
   const { height} = Dimensions.get('window');
+  const [show, setShow] = useState<boolean> (false);
+
   const navigation = useNavigation();
   return (
     <View style={{height, backgroundColor: 'white'}}>
@@ -35,7 +37,7 @@ const Login = () => {
             
             marginHorizontal: 20,
           }}>
-          <Text style={[styles.welcomeText, {textAlign: 'left'}]}>Welcome!!</Text>
+          <Text style={[styles.welcomeText, {textAlign: 'left'}]}>Welcome !!</Text>
           <View
             style={{
               borderColor: 'black',
@@ -65,20 +67,22 @@ const Login = () => {
               justifyContent: 'space-between',
               borderRadius: 100,
               backgroundColor: '#e9e9e9',
-              paddingVertical: 8
+              paddingVertical: 8,
+              alignItems: 'center'
             }}>
             <Image
               source={lock}
-              style={{height: 20, width: 20, marginLeft: 10, top: 15}}
+              style={{height: 20, width: 20, marginLeft: 15 }}
             />
-            <TextInput placeholder="Password" style={{width: '80%'}} placeholderTextColor= 'gray'/>
-            <Image
+            <TextInput placeholder="Password" style={{width: '80%'}} placeholderTextColor= 'gray' textContentType='password' secureTextEntry= {show}/>
+            <Text style = {{marginRight: 18, color: 'black'}} onPress={()=>{setShow(!show)}}>{show? 'Show' : 'Hide'}</Text>
+            {/* <Image
               source={eye}
-              style={{height: 20, width: 20, marginLeft: 10, top: 15}}
-            />
+              style={{height: 20, width: 20, marginRight: 15}}
+            /> */}
           </View>
 
-          <Text style={[styles.welcomeText, {textAlign: 'right'}]}>
+          <Text style={[styles.welcomeText, {textAlign: 'right'}]} onPress={()=> navigation.navigate('ForgotPassword')}>
             Forgot Password?
           </Text>
           <Button buttonName="Login" onPress={()=>navigation.navigate('HomePage')}/>

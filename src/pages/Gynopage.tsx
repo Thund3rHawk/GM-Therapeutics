@@ -1,8 +1,8 @@
 import React from 'react'
-import { StyleSheet, Text, View, Image, TouchableOpacity, Dimensions, ImageBackground, } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from 'react-native'
 import Card from '../components/Card'
 import image_gyno from '../assets/image_gyno.png'
-import image_2 from '../assets/image_2.png'
+import gyno_image from '../assets/gyno_image.png';
 import BackButton from '../components/BackButton'
 
 const Gynopage = () => {
@@ -22,8 +22,8 @@ const Gynopage = () => {
             {/* <Image source={ham_image} style={{width: 30, height: 30}} /> */}
           </TouchableOpacity>
         </View>
-        <View style = {{height: '15%', width, paddingHorizontal: 20, justifyContent: 'space-between'}}>
-          <Text style={styles.welcomeText}>GYNECOLOGY</Text>
+        <View style = {{height: '20%', width, paddingHorizontal: 20, justifyContent: 'space-between'}}>
+          <Text style={styles.welcomeText}>Gynecology & Obstetrics</Text>
           {/* <View style = {{flexDirection: 'row', justifyContent: 'space-between'}}>
               <Text style={styles.headingText}> Lorem Ipsum</Text>
               <TouchableOpacity>
@@ -35,22 +35,21 @@ const Gynopage = () => {
         <View style={[styles.cardsSection, {width}]}>
           <Card
             bgColor="#C8A64E"
-            imageUrl={image_2}
-            heading="PDF"
-            about="Lorem ipsum dolor sit amet,"
+            imageUrl={gyno_image}
+            heading="gyno folder"
+            // about="Lorem ipsum dolor sit amet,"
             textColor="#000000"
             navigationScreen = 'GynoPdfPage'
           />
           <Card
             bgColor="#354169"
             imageUrl={image_gyno}
-            heading="IMAGE"
-            about="Reminder Cart"
+            heading="Reminder Card"
+            // about="Reminder Cart"
             textColor="#FFFFFF"
             navigationScreen = 'Gynoimage'
           />
         </View>
-        {/* <NavigationBar /> */}
       </View>
     );
 }
@@ -81,6 +80,7 @@ const styles = StyleSheet.create({
       fontSize: 10,
     },
     welcomeText: {
+      textTransform: 'uppercase',
       fontWeight: 'bold',
       color: '#354169',
       fontSize: 35,

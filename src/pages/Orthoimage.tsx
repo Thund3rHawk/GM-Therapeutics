@@ -29,7 +29,7 @@ const Imagepage = () => {
           padding: 15,
         }}>
         <BackButton />
-        <Text style={[styles.text, {fontSize: 20}]}>IMAGE</Text>
+        <Text style={[styles.text, {fontSize: 20}]}>reminder card</Text>
         <TouchableOpacity style={{}}>
           {/* <Image source={ham_image} style={{width: 30, height: 30, right: 0}} /> */}
         </TouchableOpacity>
@@ -44,9 +44,9 @@ const Imagepage = () => {
         }}>
         <ImageView
           image={omego_card}
-          heading="Lorem Ipsum"
-          btnName="View All"
-          about="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. "
+          heading="General Physician & Orthopedic"
+          // btnName="View All"
+          about="Our clinic offers expert care in both general medicine and orthopedics, providing comprehensive health solutions. From routine check-ups to specialized bone and joint treatments, we prioritize your overall well-being and mobility."
         />
       </View>
     </View>
@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
     color: '#354169',
     fontWeight: 'bold',
     fontSize: 10,
+    textTransform: 'uppercase',
   },
   button: {
     paddingVertical: 10,
