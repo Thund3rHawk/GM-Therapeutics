@@ -12,15 +12,16 @@ import Button from '../components/Button';
 import email from '../assets/email.png';
 import lock from '../assets/lock.png';
 import eye from '../assets/eye.png';
-import google from '../assets/google.png';
-import apple from '../assets/apple.png';
-import facebook from '../assets/facebook.png';
+import eye_off from '../assets/eye-off.png';
+// import google from '../assets/google.png';
+// import apple from '../assets/apple.png';
+// import facebook from '../assets/facebook.png';
 import { useNavigation } from '@react-navigation/native';
 import BackButton from '../components/BackButton';
 
 const Login = () => {
   const { height} = Dimensions.get('window');
-  const [show, setShow] = useState<boolean> (false);
+  const [show, setShow] = useState<boolean> (true);
 
   const navigation = useNavigation();
   return (
@@ -56,7 +57,7 @@ const Login = () => {
               source={email}
               style={{height: 20, width: 20, marginLeft: 10, top: 15}}
             />
-            <TextInput placeholder="RT89851@GMAIL.COM" style = {{width: '85%'}} placeholderTextColor= 'gray'/>
+            <TextInput placeholder="Enter your email" style = {{width: '85%', color: 'black'}} placeholderTextColor= 'gray'/>
           </View>
 
           <View
@@ -72,14 +73,16 @@ const Login = () => {
             }}>
             <Image
               source={lock}
-              style={{height: 20, width: 20, marginLeft: 15 }}
+              style={{height: 20, width: 20, marginLeft: 15, marginRight: 20 }}
             />
-            <TextInput placeholder="Password" style={{width: '80%'}} placeholderTextColor= 'gray' textContentType='password' secureTextEntry= {show}/>
-            <Text style = {{marginRight: 18, color: 'black'}} onPress={()=>{setShow(!show)}}>{show? 'Show' : 'Hide'}</Text>
-            {/* <Image
-              source={eye}
-              style={{height: 20, width: 20, marginRight: 15}}
-            /> */}
+            <TextInput placeholder="Enter password" style={{width: '75%', color: 'black'}} placeholderTextColor= 'gray' textContentType='password' secureTextEntry= {show}/>
+            {/* <Text style = {{marginRight: 18, color: 'black'}} onPress={()=>{setShow(!show)}}>{show? 'Show' : 'Hide'}</Text> */}
+            <TouchableOpacity onPress={()=>{setShow(!show)}}>
+              <Image
+                source= {(show)?eye: eye_off}
+                style={{height: 20, width: 20, marginRight: 15}}                
+                />
+            </TouchableOpacity>
           </View>
 
           <Text style={[styles.welcomeText, {textAlign: 'right'}]} onPress={()=> navigation.navigate('ForgotPassword')}>

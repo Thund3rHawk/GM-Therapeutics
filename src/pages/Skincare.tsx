@@ -7,8 +7,9 @@ import {
   Dimensions,
 } from 'react-native';
 import Card from '../components/Card';
-import Skincare_image from '../assets/Skincare.webp';
-import image_13 from '../assets/image_13.png';
+import Skincare_image from '../assets/Skincare_image.jpg';
+import skin_card from '../assets/skin_card.jpg'
+// import image_13 from '../assets/image_13.png';
 // import image_2 from '../assets/image_2.png';
 import BackButton from '../components/BackButton';
 
@@ -50,7 +51,7 @@ const Skincare = () => {
         />
         <Card
           bgColor="#354169"
-          imageUrl={image_13}
+          imageUrl={skin_card}
           heading="REMINDER CARD"
           // about="Reminder Cart"
           textColor="#FFFFFF"

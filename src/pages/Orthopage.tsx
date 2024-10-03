@@ -7,7 +7,7 @@ import {
   Dimensions,
 } from 'react-native';
 import Card from '../components/Card';
-import image_1 from '../assets/image_1.png';
+import image_1 from '../assets/omego_card.jpg';
 import image_2 from '../assets/image_2.jpg';
 import BackButton from '../components/BackButton';
 

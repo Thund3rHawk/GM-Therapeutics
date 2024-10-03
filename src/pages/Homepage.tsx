@@ -1,6 +1,6 @@
 import ortho_image from '../assets/gp_image.jpg';
 import gyno_image from '../assets/gyno_image.png';
-import Skincare_image from '../assets/Skincare.webp';
+import Skincare_image from '../assets/Skincare_image.jpg';
 import React from 'react';
 import {
   StyleSheet,

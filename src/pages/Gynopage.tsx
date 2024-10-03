@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from 'react-native'
 import Card from '../components/Card'
-import image_gyno from '../assets/image_gyno.png'
+import image_gyno from '../assets/omego_card.jpg'
 import gyno_image from '../assets/gyno_image.png';
 import BackButton from '../components/BackButton'
 
